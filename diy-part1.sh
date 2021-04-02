@@ -28,9 +28,6 @@ svn co https://github.com/openwrt/packages/trunk/libs/libcap                    
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome                          package/adg
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns                                     package/smartdns
 
-git clone https://github.com/fw876/helloworld                                                            package/helloworld
-git clone https://github.com/Lienol/openwrt-package                                                      package/lienol
-git clone https://github.com/xiaorouji/openwrt-passwall.git                                              package/luci-app-passwall
 
 git clone https://github.com/pymumu/luci-app-smartdns.git -b lede                                        package/luci-app-smartdns
 git clone https://github.com/hyird/Openwrt-AdguardHome.git                                               package/AdGuardHome
