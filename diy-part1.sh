@@ -27,8 +27,10 @@ rm -rf package/lean/luci-theme-argon
 svn co https://github.com/openwrt/packages/trunk/libs/libcap                                             feeds/packages/libs/libcap
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome                          package/adg
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns                                     package/smartdns
-# svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns-le                                  package/smartdns-le
 
+git clone https://github.com/fw876/helloworld                                                            package/helloworld
+git clone https://github.com/Lienol/openwrt-package                                                      package/lienol
+git clone https://github.com/xiaorouji/openwrt-passwall.git                                              package/luci-app-passwall
 
 git clone https://github.com/pymumu/luci-app-smartdns.git -b lede                                        package/luci-app-smartdns
 git clone https://github.com/hyird/Openwrt-AdguardHome.git                                               package/AdGuardHome
@@ -47,13 +49,12 @@ git clone https://github.com/hyird/luci-theme-darkmatter.git		                  
 git clone https://github.com/garypang13/luci-app-dnsfilter.git                                           package/luci-app-dnsfilter
 git clone https://github.com/CCnut/feed-netkeeper.git -b LUCI-LUA-UCITRACK                               package/feed-netkeeper
 
-# git clone https://github.com/garypang13/luci-app-bypass.git                                              package/luci-app-bypass
-# git clone https://github.com/garypang13/smartdns-le.git                                                  package/smartdns-le
 
-sed -i 's/DEPENDS.*/& \+adguardhome/g'  package/adg/Makefile
 sed -i 's/DEPENDS.*/& \+kmod-tun +libcap-bin/g'  package/luci-app-openclash/luci-app-openclash/Makefile
 sed -i 's/DEPENDS.*/& \+luci-i18n-mwan3-zh-cn/g'  package/lean/luci-app-syncdial/Makefile
 sed -i 's/DEPENDS.*/& \+kmod-usb-core +kmod-usb-ohci +kmod-usb-uhci +kmod-usb-storage +kmod-usb-storage-extras +kmod-usb2 +kmod-scsi-core/g'  package/lean/automount/Makefile
-
+# git clone https://github.com/garypang13/luci-app-bypass.git                                              package/luci-app-bypass
+# git clone https://github.com/garypang13/smartdns-le.git                                                  package/smartdns-le
+# svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns-le                                  package/smartdns-le
 # find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
 # find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
