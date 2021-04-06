@@ -13,15 +13,12 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
-echo "Apply custom.sh"
 
-rm -rf feeds/packages/libs/libcap
 rm -rf package/feeds/routing/olsrd/patches/012-gpsd.patch
 rm -rf feeds/packages/net/smartdns
 rm -rf package/lean/luci-theme-argon
 
 
-svn co https://github.com/openwrt/packages/trunk/libs/libcap                                             feeds/packages/libs/libcap
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome                          package/adg
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns                                     package/smartdns
 
