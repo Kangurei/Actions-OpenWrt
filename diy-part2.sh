@@ -19,14 +19,15 @@ rm -rf feeds/packages/net/smartdns
 rm -rf package/lean/luci-theme-argon
 
 
-svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome                          package/adg
+
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns                                     package/smartdns
-
-
 git clone https://github.com/pymumu/luci-app-smartdns.git -b lede                                        package/luci-app-smartdns
+git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06                                     package/luci-theme-argon-jerrykuku
+
+svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome                          package/adg
 git clone https://github.com/hyird/Openwrt-AdguardHome.git                                               package/AdGuardHome
 git clone https://github.com/yangsongli/luci-theme-atmaterial.git                                        package/luci-theme-atmaterial
-git clone https://github.com/jerrykuku/luci-theme-argon.git -b 18.06                                     package/luci-theme-argon-jerrykuku
+
 
 git clone https://github.com/tindy2013/openwrt-subconverter.git                                          package/openwrt-subconverter
 git clone https://github.com/jerrykuku/luci-app-argon-config.git                                         package/luci-app-argon-config
