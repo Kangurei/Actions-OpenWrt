@@ -22,9 +22,6 @@ sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds
 
 
 git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
-
-# git clone https://github.com/ITdesk01/jd_openwrt_script.git package/jd_openwrt_script
-
 git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-bypass
 git clone https://github.com/garypang13/luci-app-dnsfilter.git package/luci-app-dnsfilter
 svn co https://github.com/garypang13/openwrt-packages/trunk/smartdns-le package/smartdns-le
