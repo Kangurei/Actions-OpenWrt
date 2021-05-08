@@ -24,8 +24,6 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-ser
 git clone https://github.com/garypang13/luci-app-dnsfilter.git package/luci-app-dnsfilter
 
 
-svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome                          package/adg
-git clone https://github.com/hyird/Openwrt-AdguardHome.git                                               package/AdGuardHome
 git clone https://github.com/yangsongli/luci-theme-atmaterial.git                                        package/luci-theme-atmaterial
 
 git clone https://github.com/tindy2013/openwrt-subconverter.git                                          package/openwrt-subconverter
