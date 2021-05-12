@@ -29,4 +29,3 @@ git clone https://github.com/yangsongli/luci-theme-atmaterial.git               
 git clone https://github.com/tindy2013/openwrt-subconverter.git                                          package/openwrt-subconverter
 git clone https://github.com/jerrykuku/luci-app-argon-config.git                                         package/luci-app-argon-config
 git clone https://github.com/jerrykuku/lua-maxminddb.git                                                 package/lua-maxminddb
-git clone https://github.com/CCnut/feed-netkeeper.git -b LUCI-LUA-UCITRACK                               package/feed-netkeeper
